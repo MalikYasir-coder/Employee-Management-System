@@ -1,8 +1,13 @@
-import React from 'react'
+import './App.css'
+import './othercomponents/Header.css'
+import './othercomponents/TaskList.css'
+import EmployeeDashboard from './components/Dashboard/EmployeeDashboard'
 
 function App() {
   return (
-    <div>App</div>
+    <>
+      <EmployeeDashboard />
+    </>
   )
 }
 
