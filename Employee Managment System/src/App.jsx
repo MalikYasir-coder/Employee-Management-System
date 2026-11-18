@@ -1,14 +1,10 @@
 import './App.css'
 import './othercomponents/Header.css'
 import './othercomponents/TaskList.css'
-import EmployeeDashboard from './components/Dashboard/EmployeeDashboard'
+import AdminDashboard from './components/Dashboard/AdminDashboard'
 
 function App() {
-  return (
-    <>
-      <EmployeeDashboard />
-    </>
-  )
+  return <AdminDashboard />
 }
 
 export default App
