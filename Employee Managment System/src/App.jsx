@@ -2,15 +2,17 @@ import './App.css'
 import './othercomponents/Header.css'
 import './othercomponents/TaskList.css'
 import Login from './components/Auth/Login'
-import AdminDashboard from './components/Dashboard/AdminDashboard'
-import EmployeeDashboard from './components/Dashboard/EmployeeDashboard'
+import { useEffect } from 'react'
+import setLocalStorage from './utils/localstorage'
 
 function App() {
+  useEffect(() => {
+    setLocalStorage()
+  }, [])
+
   return (
     <>
-      <AdminDashboard />
-      {/* <Login /> */}
-      {/* <EmployeeDashboard/> */}
+      <Login />
     </>
   )
 }
